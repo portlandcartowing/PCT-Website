@@ -8,13 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Deploy to Bluehost
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /public_html/
-          protocol: ftps
-          port: 21
-          dangerous-clean-slate: true
+
+      - name: Install lftp
+        run: sudo apt-get update && sudo apt-get install -y lftp
+
+      - name: Deploy via lftp
+        run: |
+          lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" \
+               -e "set ftp:ssl-allow yes; set ssl:verify-certificate no; set ftp:passive-mode yes; \
+                   mirror --reverse --delete --verbose --parallel=5 \
+                   --exclude .git/ --exclude .github/ \
+                   ./ /public_html/; quit" \
+               ${{ secrets.FTP_HOST }}
