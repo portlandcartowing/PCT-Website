@@ -1,37 +1,28 @@
-name: Deploy to Bluehost via FTP
+name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 jobs:
   deploy:
-    name: Deploy via FTP
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Install lftp
-        run: sudo apt-get update && sudo apt-get install -y lftp
-
-      - name: Deploy via lftp
-        run: |
-          lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" \
-               -e "
-                 set ftp:ssl-allow yes;
-                 set ssl:verify-certificate no;
-                 set ftp:passive-mode yes;
-                 echo '--- Current directory ---';
-                 pwd;
-                 echo '--- Listing home ---';
-                 ls;
-                 echo '--- Changing to public_html ---';
-                 cd public_html;
-                 pwd;
-                 echo '--- Starting upload ---';
-                 mirror --reverse --verbose --parallel=5 \
-                   --exclude .git/ --exclude .github/ \
-                   ./;
-                 echo '--- Upload complete ---';
-                 ls;
-                 quit
-               " \
-               ${{ secrets.FTP_HOST }}
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

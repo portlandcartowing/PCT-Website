@@ -137,9 +137,9 @@ p {
 
 .logo-box img {
   width:auto;
-  height:100px;
-  max-height:100px;
-  max-width:300px;
+  height:140px;
+  max-height:140px;
+  max-width:400px;
   object-fit:contain;
 }
 
@@ -660,9 +660,9 @@ p {
   }
 
   .logo-box img {
-    height:80px;
-    max-height:80px;
-    max-width:260px;
+    height:100px;
+    max-height:100px;
+    max-width:300px;
   }
 
   .brand-text {
