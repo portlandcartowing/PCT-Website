@@ -3,163 +3,492 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tire Change Service Portland OR | Flat Tire Help 24/7</title>
-  <meta name="description" content="Need flat tire help in Portland OR? Affordable Car Towing LLC provides fast tire change service and roadside assistance in Portland and nearby areas." />
-  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0a2540" />
+
+  <title>Tire Change Service Portland OR | 24/7 Flat Tire Help | (503) 608-7014</title>
+  <meta name="description" content="24/7 tire change service in Portland, OR. Fast flat tire help — we swap your flat for the spare roadside. 5.0 stars on Google. Call (503) 608-7014 now." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://portlandcartowing.com/tire-change-service/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tire Change Service Portland OR | 24/7 Flat Tire Help" />
+  <meta property="og:description" content="24/7 flat tire service in Portland, OR. Fast roadside tire change to get you moving. 5.0-star rated." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://portlandcartowing.com/tire-change-service/" />
+  <meta property="og:image" content="https://portlandcartowing.com/images/tow-truck-hero.jpg" />
+  <meta property="og:site_name" content="Affordable Car Towing LLC" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tire Change Service Portland OR | 24/7 Flat Tire Help" />
+  <meta name="twitter:description" content="24/7 flat tire service in Portland, OR. 5.0-star rated." />
+  <meta name="twitter:image" content="https://portlandcartowing.com/images/tow-truck-hero.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+  <link rel="apple-touch-icon" href="/images/logo.png" />
+
+  <!-- Preconnects -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <!-- Inline overrides: hero sizing + photo framing (same as homepage) -->
+  <style>
+    .hero h1 {
+      font-size: clamp(28px, 3.6vw, 46px);
+      line-height: 1.12;
+      letter-spacing: -0.015em;
+      max-width: 620px;
+    }
+    @media (max-width: 640px) {
+      .hero h1 { font-size: clamp(26px, 7vw, 36px); }
+    }
+    .hero-photo, .hero-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+    .hero-photo-wrap {
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+    }
+    .breadcrumb-nav {
+      padding: 16px 0;
+      font-size: 14px;
+      opacity: 0.75;
+    }
+    .breadcrumb-nav a { color: inherit; text-decoration: none; }
+    .breadcrumb-nav a:hover { text-decoration: underline; }
+  </style>
+
+  <!-- Google Ads / gtag.js -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18077625029"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18077625029');
+
+    function trackPhoneCall(source) {
+      gtag('event', 'phone_call_click', {
+        'event_category': 'engagement',
+        'event_label': source || 'unknown'
+      });
+      return true;
+    }
+  </script>
+
+  <!-- Schema: Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Tire Change Service",
+    "alternateName": "24/7 Flat Tire Change Service Portland",
+    "serviceType": "Tire Change Service",
+    "url": "https://portlandcartowing.com/tire-change-service/",
+    "description": "24/7 tire change service in Portland, Oregon. Fast roadside flat tire swap with your spare tire. Service available on highways, parking lots, and residential areas across the Portland metro.",
+    "provider": {
+      "@type": "AutomotiveBusiness",
+      "@id": "https://portlandcartowing.com/#business",
+      "name": "Affordable Car Towing LLC",
+      "telephone": "+15036087014",
+      "url": "https://portlandcartowing.com/",
+      "image": "https://portlandcartowing.com/images/tow-truck-hero.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Portland",
+        "addressRegion": "OR",
+        "postalCode": "97236",
+        "addressCountry": "US"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "18",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Portland" },
+      { "@type": "City", "name": "Gresham" },
+      { "@type": "City", "name": "Clackamas" },
+      { "@type": "City", "name": "Milwaukie" },
+      { "@type": "City", "name": "Beaverton" },
+      { "@type": "City", "name": "Hillsboro" },
+      { "@type": "City", "name": "Troutdale" },
+      { "@type": "City", "name": "Vancouver" }
+    ],
+    "availableChannel": {
+      "@type": "ServiceChannel",
+      "servicePhone": "+15036087014",
+      "availableLanguage": "English"
+    },
+    "hoursAvailable": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  }
+  </script>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://portlandcartowing.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Tire Change Service", "item": "https://portlandcartowing.com/tire-change-service/" }
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How fast can you get to me for a flat tire in Portland?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Response times vary based on your location and traffic, but we pride ourselves on fast local dispatch across Portland and surrounding areas. Call (503) 608-7014 for a current ETA." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide 24/7 tire change service?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. We provide 24/7 tire change service in Portland, Oregon. Flat tires happen at all hours — we respond day or night, every day of the year." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to have a spare tire for your tire change service?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our roadside tire change service swaps your flat tire for the spare tire in your vehicle. If you do not have a usable spare, we can tow your vehicle to a tire shop instead." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you change a tire on the highway or freeway?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. We respond to flat tire calls along I-5, I-205, I-84, Highway 26, and other Portland-area roads. We carry safety equipment and work quickly to get you off the shoulder safely." }
+      },
+      {
+        "@type": "Question",
+        "name": "What if my tire cannot be changed roadside?",
+        "acceptedAnswer": { "@type": "Answer", "text": "If your vehicle does not have a spare tire, the lug nuts are seized, or the flat tire is on a vehicle that cannot be safely jacked roadside, we can provide emergency flatbed towing to the nearest tire shop." }
+      },
+      {
+        "@type": "Question",
+        "name": "What payment methods do you accept?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We accept cash, credit cards, and debit cards." }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <div class="brand-wrap">
-      <div class="logo-box">
-        <img src="../assets/img/logo.png" alt="Affordable Car Towing LLC" />
-      </div>
-      <div class="brand-text">
-        <div class="brand-name">Affordable Car Towing LLC</div>
-        <div class="brand-sub">Portland • 24/7 Roadside Assistance</div>
-      </div>
-    </div>
-    <nav class="main-nav">
-      <a href="/">Home</a>
-      <a href="/#services">Services</a>
-      <a href="/#areas">Areas</a>
-      <a href="/#contact">Contact</a>
-      <a href="tel:15036087014" class="header-cta">Call Now</a>
-    </nav>
+  <!-- Sticky mobile call bar -->
+  <div class="mobile-callbar">
+    <a href="tel:+15036087014" onclick="trackPhoneCall('mobile_callbar_tire')">Call Now (503) 608-7014</a>
   </div>
-</header>
 
-<main>
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <div class="eyebrow">Portland Tire Change Service</div>
-        <h1>Tire Change Service Portland OR – Flat Tire Help 24/7</h1>
-        <p>
-          Affordable Car Towing LLC provides fast tire change service in Portland Oregon.
-          If you have a flat tire and need help installing your spare, call now for quick roadside assistance in Portland and nearby areas.
-        </p>
-        <div class="hero-actions">
-          <a href="tel:15036087014" class="btn btn-yellow">Call Now (503) 608-7014</a>
-          <a href="/roadside-assistance/" class="btn btn-ghost">View Roadside Assistance</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-wrap" aria-label="Affordable Car Towing LLC home" style="text-decoration:none;color:inherit;">
+        <div class="logo-box">
+          <img src="/images/logo.png" alt="Affordable Car Towing LLC - Portland tow truck service" width="100" height="100" />
+        </div>
+        <div class="brand-text">
+          <div class="brand-name">Affordable Car Towing LLC</div>
+          <div class="brand-sub">Portland • 24/7 Roadside Assistance</div>
+        </div>
+      </a>
+
+      <a href="tel:+15036087014" class="header-cta mobile-header-cta" onclick="trackPhoneCall('mobile_header_tire')">Call Now</a>
+
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/#services">Services</a>
+        <a href="/#areas">Areas We Serve</a>
+        <a href="/#reviews">Reviews</a>
+        <a href="/#faq">FAQ</a>
+        <a class="header-cta" href="tel:+15036087014" onclick="trackPhoneCall('desktop_header_tire')">Call Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Visible Breadcrumb -->
+    <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+      <div class="container">
+        <a href="/">Home</a> <span aria-hidden="true">›</span> <span>Tire Change Service</span>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-pattern"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">★★★★★ 5.0 on Google • 18 Reviews</div>
+          <h1>Tire Change Service in Portland, OR — Flat Tire Help 24/7</h1>
+          <p>
+            Got a flat tire in Portland? Affordable Car Towing LLC provides fast roadside tire change service throughout Portland and surrounding areas. We will swap your flat for the spare and get you back on the road safely. No jack, no hassle — just call and we handle it. Available 24/7.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-yellow" href="tel:+15036087014" onclick="trackPhoneCall('hero_tire')">Call Now (503) 608-7014</a>
+            <a class="btn btn-ghost" href="#service-areas">View Service Areas</a>
+          </div>
+          <div class="pill-row">
+            <span>Flat Tires</span>
+            <span>Spare Tire Swap</span>
+            <span>Highway Flats</span>
+            <span>Parking Lot Help</span>
+            <span>24/7 Service</span>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-photo-wrap">
+            <img class="hero-photo" src="/images/tow-truck-hero.jpg" alt="Roadside tire change service for flat tire in Portland Oregon" width="800" height="600" fetchpriority="high" />
+          </div>
         </div>
       </div>
-      <div class="hero-media">
-        <img class="hero-photo" src="../assets/img/tow-truck-hero.jpg" alt="Tire change service in Portland OR" />
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="section-head center">
-        <div class="section-kicker">Flat Tire Help</div>
-        <h2>Need a tire change near you in Portland?</h2>
+    <!-- Near me -->
+    <section class="section">
+      <div class="container">
+        <h2>Flat tire service near me in Portland</h2>
         <p>
-          We provide flat tire help across Portland including downtown Portland, Southeast Portland,
-          I-5, I-205, parking lots, homes, work sites, and surrounding neighborhoods.
-          If your tire goes flat and you have a usable spare, call now for local roadside help.
+          If you are searching for flat tire help near you in Portland, Affordable Car Towing LLC provides fast local dispatch across I-5, I-205, Highway 26, downtown Portland, and surrounding neighborhoods. A flat tire can happen anywhere — potholes, road debris, nails, and curb strikes are common causes across the Portland metro.
+        </p>
+        <p>
+          Our tire change service is simple: we come to your location, safely jack up your vehicle, remove the flat tire, and install your spare. You drive to the nearest tire shop on your spare while we handle the heavy lifting. If you do not have a usable spare, we can tow your vehicle to a tire shop instead.
         </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="services section">
-    <div class="container">
-      <div class="services-grid">
-        <article class="service-card">
-          <h3>Roadside Tire Change</h3>
-          <p>Flat tire on the road? We help install your spare and get you moving again.</p>
-        </article>
-        <article class="service-card">
-          <h3>Parking Lot Tire Help</h3>
-          <p>If you come back to a flat tire at work, a store, or a garage, we provide quick local assistance.</p>
-        </article>
-        <article class="service-card">
-          <h3>Home Tire Change Service</h3>
-          <p>Need help at home or in the driveway? We provide fast roadside support there too.</p>
-        </article>
+    <!-- Trust strip -->
+    <section class="trust-strip container">
+      <div class="trust-card">
+        <h3>Quick Tire Swap</h3>
+        <p>We remove the flat and install your spare quickly so you can get moving again.</p>
       </div>
+      <div class="trust-card">
+        <h3>Safe Roadside Work</h3>
+        <p>Professional equipment and safety lighting for tire changes on highways, shoulders, and busy streets.</p>
+      </div>
+      <div class="trust-card">
+        <h3>24/7 Availability</h3>
+        <p>Available day or night, every day of the year, for tire change service across Portland and surrounding areas.</p>
+      </div>
+    </section>
 
-      <div style="text-align:center; margin:40px 0 10px;">
-        <a href="tel:15036087014" class="btn btn-yellow">Call Now For Tire Change Service</a>
-      </div>
-    </div>
-  </section>
+    <!-- What we handle -->
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-head center">
+          <div class="section-kicker">When To Call Us</div>
+          <h2>Flat tire situations we handle</h2>
+          <p>Flat tires are unpredictable. Here are the most common scenarios Portland drivers call us for.</p>
+        </div>
 
-  <section class="section section-soft">
-    <div class="container split-grid">
-      <div class="about-copy">
-        <div class="section-kicker">More Roadside Services</div>
-        <h2>Other services we provide in Portland</h2>
-        <p>
-          If the issue is more than a flat tire, we also provide towing and other roadside services throughout Portland.
-        </p>
-        <ul>
-          <li><a href="/roadside-assistance/">Roadside Assistance</a></li>
-          <li><a href="/jump-start-service/">Jump Start Service</a></li>
-          <li><a href="/car-lockout-service/">Car Lockout Service</a></li>
-          <li><a href="/fuel-delivery-service/">Fuel Delivery Service</a></li>
-          <li><a href="/emergency-towing/">Emergency Towing</a></li>
-        </ul>
-      </div>
-      <div class="about-photo-wrap">
-        <img class="about-photo" src="../assets/img/tow-truck-service.jpg" alt="Portland roadside assistance and flat tire help" />
-      </div>
-    </div>
-  </section>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Highway &amp; Freeway Flats</h3>
+            <p>Flat tire on I-5, I-205, I-84, or Highway 26? Changing a tire on a highway shoulder is dangerous. We come to you with safety equipment and handle it professionally.</p>
+          </article>
+          <article class="service-card">
+            <h3>Pothole Damage</h3>
+            <p>Portland roads are tough on tires. If a pothole blew out your tire, pull over safely and call us for a fast spare tire swap.</p>
+          </article>
+          <article class="service-card">
+            <h3>Nail or Debris Punctures</h3>
+            <p>Nails, screws, and road debris cause slow leaks that turn into flat tires. If your tire is flat and you have a spare, we will swap it out roadside.</p>
+          </article>
+          <article class="service-card">
+            <h3>Parking Lot Flats</h3>
+            <p>Came back to a flat tire at the store, work, or a restaurant? We come to any parking lot in the Portland metro area and change your tire on the spot.</p>
+          </article>
+          <article class="service-card">
+            <h3>Home Driveway Service</h3>
+            <p>Flat tire at home and no jack or not comfortable changing it yourself? We come to your home in Portland and handle it quickly.</p>
+          </article>
+          <article class="service-card">
+            <h3>No Spare? We Tow.</h3>
+            <p>Many newer vehicles do not come with a spare tire. If you do not have a spare, we provide <a href="/emergency-towing/">emergency towing</a> to the nearest tire shop.</p>
+          </article>
+        </div>
 
-  <section class="section section-blue">
+        <div style="text-align:center; margin:40px 0;">
+          <a href="tel:+15036087014" class="btn btn-yellow" onclick="trackPhoneCall('services_cta_tire')">
+            Call Now For Tire Change Service
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related services -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center">
+          <div class="section-kicker">Related Services</div>
+          <h2>Other roadside services we provide</h2>
+          <p>In addition to tire change service, we offer a full range of towing and roadside assistance.</p>
+        </div>
+
+        <div class="areas-grid">
+          <a href="/emergency-towing/">Emergency Towing</a>
+          <a href="/flatbed-towing/">Flatbed Towing</a>
+          <a href="/roadside-assistance/">Roadside Assistance</a>
+          <a href="/jump-start-service/">Jump Start Service</a>
+          <a href="/car-lockout-service/">Car Lockout Service</a>
+          <a href="/fuel-delivery-service/">Fuel Delivery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service areas -->
+    <section id="service-areas" class="section">
+      <div class="container">
+        <div class="areas-top">
+          <div>
+            <div class="section-kicker">Service Areas</div>
+            <h2>Tire change service across the Portland metro</h2>
+          </div>
+          <a class="btn btn-yellow" href="tel:+15036087014" onclick="trackPhoneCall('areas_cta_tire')">Need help now? Call (503) 608-7014</a>
+        </div>
+
+        <div class="areas-grid">
+          <a href="/portland-car-towing/">Portland</a>
+          <a href="/gresham-car-towing/">Gresham</a>
+          <a href="/clackamas-car-towing/">Clackamas</a>
+          <a href="/gladstone-car-towing/">Gladstone</a>
+          <a href="/oregon-city-car-towing/">Oregon City</a>
+          <a href="/damascus-car-towing/">Damascus</a>
+          <a href="/boring-car-towing/">Boring</a>
+          <a href="/sandy-car-towing/">Sandy</a>
+          <a href="/lake-oswego-car-towing/">Lake Oswego</a>
+          <a href="/west-linn-car-towing/">West Linn</a>
+          <a href="/beaverton-car-towing/">Beaverton</a>
+          <a href="/hillsboro-car-towing/">Hillsboro</a>
+          <a href="/troutdale-car-towing/">Troutdale</a>
+          <a href="/milwaukie-car-towing/">Milwaukie</a>
+          <a href="/vancouver-wa-car-towing/">Vancouver, WA</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section section-blue">
+      <div class="container">
+        <div class="section-head center light">
+          <div class="section-kicker gold">★★★★★ 5.0 on Google • 18 Reviews</div>
+          <h2>What customers are saying</h2>
+        </div>
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>Tow driver was an absolute gentleman, and extremely quick to pick me up and got me where I needed to be with no problems.</p>
+            <strong>Google Review: Dustin</strong>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>My car completely stopped working on the side of the road and I needed to get the car towed. Victor came and picked up the car smoothly and quickly.</p>
+            <strong>Google Review: Laura</strong>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>Viktor helped me when I got into a car accident and needed to be towed. Very friendly and helpful throughout the whole situation.</p>
+            <strong>Google Review: Aleks</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center">
+          <div class="section-kicker">FAQ</div>
+          <h2>Tire change service frequently asked questions</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>How fast can you get to me for a flat tire in Portland?</h3>
+            <p>Response times vary based on your location and traffic, but we pride ourselves on fast local dispatch across Portland and surrounding areas. Call <a href="tel:+15036087014" onclick="trackPhoneCall('faq_eta_tire')">(503) 608-7014</a> for a current ETA.</p>
+          </article>
+          <article class="service-card">
+            <h3>Do you provide 24/7 tire change service?</h3>
+            <p>Yes. We provide 24/7 tire change service in Portland, Oregon. Flat tires happen at all hours — we respond day or night, every day of the year.</p>
+          </article>
+          <article class="service-card">
+            <h3>Do I need to have a spare tire for your tire change service?</h3>
+            <p>Yes. Our roadside tire change service swaps your flat tire for the spare tire in your vehicle. If you do not have a usable spare, we can <a href="/emergency-towing/">tow your vehicle</a> to a tire shop instead.</p>
+          </article>
+          <article class="service-card">
+            <h3>Can you change a tire on the highway or freeway?</h3>
+            <p>Yes. We respond to flat tire calls along I-5, I-205, I-84, Highway 26, and other Portland-area roads. We carry safety equipment and work quickly to get you off the shoulder safely.</p>
+          </article>
+          <article class="service-card">
+            <h3>What if my tire cannot be changed roadside?</h3>
+            <p>If your vehicle does not have a spare tire, the lug nuts are seized, or the flat is on a vehicle that cannot be safely jacked roadside, we can provide emergency flatbed towing to the nearest tire shop.</p>
+          </article>
+          <article class="service-card">
+            <h3>What payment methods do you accept?</h3>
+            <p>We accept cash, credit cards, and debit cards.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+      <div class="container cta-shell">
+        <div class="cta-panel">
+          <div>
+            <div class="section-kicker gold">Call Now</div>
+            <h2>Got a flat tire right now?</h2>
+            <p>Fast, affordable tire change service available 24/7. We service Portland, Vancouver, Gresham, Clackamas, Happy Valley, and surrounding areas with quick response times, professional service, and upfront pricing.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-yellow" href="tel:+15036087014" onclick="trackPhoneCall('final_cta_tire')">Call (503) 608-7014</a>
+            <div class="contact-chip">Portland, OR • 24/7 Service • Vancouver, WA</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="section section-blue" style="padding-top:40px;padding-bottom:40px;">
     <div class="container">
       <div class="section-head center light">
-        <div class="section-kicker gold">Tire Change FAQ</div>
-        <h2>Frequently asked questions about flat tire help in Portland</h2>
-      </div>
-
-      <div class="services-grid">
-        <article class="service-card">
-          <h3>Do you provide tire change service in Portland 24/7?</h3>
-          <p>Yes. We provide flat tire help and roadside assistance in Portland day and night.</p>
-        </article>
-        <article class="service-card">
-          <h3>Can you help if I have a spare tire?</h3>
-          <p>Yes. If you have a usable spare, we can help install it and get you back on the road.</p>
-        </article>
-        <article class="service-card">
-          <h3>What if my vehicle cannot be driven?</h3>
-          <p>If your vehicle cannot be safely driven, we can also help with <a href="/emergency-towing/">emergency towing</a>.</p>
-        </article>
+        <div style="font-size:20px;font-weight:800;margin-bottom:10px;">Affordable Car Towing LLC</div>
+        <p style="margin:6px 0;">Portland, OR • 24/7 Towing &amp; Roadside Assistance</p>
+        <p style="margin:6px 0;">Service area: Portland, Gresham, Clackamas, Beaverton, Hillsboro, Vancouver WA, and surrounding communities.</p>
+        <p style="margin:10px 0;"><a href="tel:+15036087014" onclick="trackPhoneCall('footer_tire')" style="color:#FFD700;font-weight:700;text-decoration:none;">(503) 608-7014</a></p>
+        <p style="margin-top:20px;font-size:13px;opacity:0.75;">&copy; 2026 Affordable Car Towing LLC. All rights reserved.</p>
       </div>
     </div>
-  </section>
+  </footer>
 
-  <section class="cta section">
-    <div class="container cta-shell">
-      <div class="cta-panel">
-        <div>
-          <div class="section-kicker gold">Call Now</div>
-          <h2>Need flat tire help right now?</h2>
-          <p>Call Affordable Car Towing LLC for fast tire change service in Portland and nearby areas.</p>
-        </div>
-        <div class="cta-actions">
-          <a href="tel:15036087014" class="btn btn-yellow">Call Now (503) 608-7014</a>
-          <div class="contact-chip">Portland, OR • 24/7 Flat Tire Help</div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="footer-content">
-    <p>&copy; 2026 Affordable Car Towing LLC. All Rights Reserved.</p>
-  </div>
-</footer>
-
-<script src="../assets/js/main.js"></script>
+  <script src="../assets/js/main.js"></script>
 <script src="../assets/js/dni.js"></script>
 </body>
 </html>

@@ -1,89 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a2540" />
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Hillsboro Car Towing | Affordable Car Towing LLC</title>
-        <meta name="description" content="Affordable Car Towing LLC offers reliable towing, roadside assistance, and 24/7 services in Hillsboro and surrounding areas." />
-        <link rel="stylesheet" href="../assets/css/styles.css" />
-    </head>
-    <body>
-        <header class="site-header">
-            <div class="container header-inner">
-                <div class="brand-wrap">
-                    <div class="logo-box">
-                        <img src="../assets/img/logo.png" alt="Affordable Car Towing LLC" />
-                    </div>
-                    <div class="brand-text">
-                        <div class="brand-name">Affordable Car Towing LLC</div>
-                        <div class="brand-sub">Hillsboro • 24/7 Roadside Assistance</div>
-                    </div>
-                </div>
-                <button class="menu-toggle">☰</button>
-                <nav class="main-nav">
-                    <a href="../#services">Services</a>
-                    <a href="../#areas">Areas We Serve</a>
-                    <a href="../#reviews">Reviews</a>
-                    <a href="../#contact">Contact</a>
-                    <a href="tel:15036087014" class="header-cta">Call Now</a>
-                </nav>
+  <title>Hillsboro Car Towing | 24/7 Tow Truck Hillsboro OR | (503) 608-7014</title>
+  <meta name="description" content="24/7 Hillsboro car towing near Highway 26 and Tualatin Valley Highway. Flatbed towing, jump starts, lockouts, roadside help. Call (503) 608-7014." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://portlandcartowing.com/hillsboro-car-towing/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hillsboro Car Towing | 24/7 Emergency Tow Truck Service" />
+  <meta property="og:description" content="Fast 24/7 towing and roadside assistance in Hillsboro, OR. Serving Highway 26, TV Highway, and the west side. Call (503) 608-7014." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://portlandcartowing.com/hillsboro-car-towing/" />
+  <meta property="og:image" content="https://portlandcartowing.com/images/tow-truck-hero.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Affordable Car Towing LLC" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hillsboro Car Towing | 24/7 Emergency Tow Truck Service" />
+  <meta name="twitter:description" content="Fast 24/7 towing and roadside assistance in Hillsboro, OR. Serving Highway 26, TV Highway, and the west side. Call (503) 608-7014." />
+  <meta name="twitter:image" content="https://portlandcartowing.com/images/tow-truck-hero.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+  <link rel="apple-touch-icon" href="/images/logo.png" />
+
+  <!-- Preconnects -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <!-- Inline style overrides -->
+  <style>
+    .hero h1 {
+      font-size: clamp(28px, 3.6vw, 46px);
+      line-height: 1.12;
+      letter-spacing: -0.015em;
+      max-width: 620px;
+    }
+    @media (max-width: 640px) {
+      .hero h1 { font-size: clamp(26px, 7vw, 36px); }
+    }
+    .hero-photo, .hero-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+    .hero-photo-wrap {
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+    }
+    .breadcrumb-nav { padding: 16px 0; font-size: 14px; opacity: 0.75; }
+    .breadcrumb-nav a { color: inherit; text-decoration: none; }
+    .breadcrumb-nav a:hover { text-decoration: underline; }
+  </style>
+
+  <!-- Google Ads / gtag.js -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18077625029"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18077625029');
+
+    function trackPhoneCall(source) {
+      gtag('event', 'phone_call_click', {
+        'event_category': 'engagement',
+        'event_label': source || 'unknown'
+      });
+      return true;
+    }
+  </script>
+
+  <!-- Schema: AutomotiveBusiness / LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["AutomotiveBusiness", "LocalBusiness"],
+    "@id": "https://portlandcartowing.com/#business",
+    "name": "Affordable Car Towing LLC",
+    "alternateName": "Hillsboro Car Towing",
+    "url": "https://portlandcartowing.com/hillsboro-car-towing/",
+    "telephone": "+15036087014",
+    "image": "https://portlandcartowing.com/images/tow-truck-hero.jpg",
+    "logo": "https://portlandcartowing.com/images/logo.png",
+    "description": "24/7 towing and roadside assistance in Hillsboro, Oregon. Flatbed towing, emergency towing, jump starts, lockouts, tire changes, and fuel delivery near Highway 26 and Tualatin Valley Highway.",
+    "priceRange": "$$",
+    "currenciesAccepted": "USD",
+    "paymentAccepted": "Cash, Credit Card, Debit Card",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Portland",
+      "addressRegion": "OR",
+      "postalCode": "97236",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 45.5229,
+      "longitude": -122.9898
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    ],
+    "areaServed": [
+      { "@type": "City", "name": "Hillsboro" },
+      { "@type": "City", "name": "Portland" },
+      { "@type": "City", "name": "Beaverton" },
+      { "@type": "City", "name": "Aloha" },
+      { "@type": "City", "name": "Cornelius" },
+      { "@type": "City", "name": "Forest Grove" },
+      { "@type": "City", "name": "Tigard" },
+      { "@type": "City", "name": "Tualatin" }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Towing and Roadside Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergency Towing", "url": "https://portlandcartowing.com/emergency-towing/" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Flatbed Towing", "url": "https://portlandcartowing.com/flatbed-towing/" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roadside Assistance", "url": "https://portlandcartowing.com/roadside-assistance/" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Jump Start Service", "url": "https://portlandcartowing.com/jump-start-service/" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Car Lockout Service", "url": "https://portlandcartowing.com/car-lockout-service/" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tire Change Service", "url": "https://portlandcartowing.com/tire-change-service/" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fuel Delivery", "url": "https://portlandcartowing.com/fuel-delivery-service/" } }
+      ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "18",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  }
+  </script>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://portlandcartowing.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Hillsboro Car Towing", "item": "https://portlandcartowing.com/hillsboro-car-towing/" }
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do you offer 24 hour towing in Hillsboro?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Affordable Car Towing LLC provides 24/7 towing and roadside assistance throughout Hillsboro, including along Highway 26 and Tualatin Valley Highway." }
+      },
+      {
+        "@type": "Question",
+        "name": "How quickly can you reach me in Hillsboro?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Response times vary based on traffic and your location, but we dispatch quickly to all parts of Hillsboro and the west side. Call (503) 608-7014 for a current ETA." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you tow vehicles near the Intel campus in Hillsboro?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. We serve the entire Hillsboro area including the Ronler Acres and Jones Farm Intel campuses, Orenco Station, Tanasbourne, and AmberGlen." }
+      },
+      {
+        "@type": "Question",
+        "name": "What towing services are available in Hillsboro?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We offer emergency towing, flatbed towing, jump starts, lockout service, tire changes, and fuel delivery throughout Hillsboro and surrounding west side communities." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide roadside assistance on Highway 26?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, we provide towing and roadside assistance along Highway 26 (Sunset Highway) through Hillsboro, Beaverton, and into Portland." }
+      },
+      {
+        "@type": "Question",
+        "name": "What payment methods do you accept?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We accept cash, credit cards, and debit cards." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Sticky mobile call bar -->
+  <div class="mobile-callbar">
+    <a href="tel:+15036087014" onclick="trackPhoneCall('mobile_callbar_hillsboro')">Call Now (503) 608-7014</a>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-wrap" aria-label="Affordable Car Towing LLC home" style="text-decoration:none;color:inherit;">
+        <div class="logo-box">
+          <img src="/images/logo.png" alt="Affordable Car Towing LLC - Hillsboro tow truck service" width="100" height="100" />
+        </div>
+        <div class="brand-text">
+          <div class="brand-name">Affordable Car Towing LLC</div>
+          <div class="brand-sub">Hillsboro • 24/7 Roadside Assistance</div>
+        </div>
+      </a>
+
+      <a href="tel:+15036087014" class="header-cta mobile-header-cta" onclick="trackPhoneCall('mobile_header_hillsboro')">Call Now</a>
+
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/#services">Services</a>
+        <a href="/#areas">Areas</a>
+        <a href="/#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a class="header-cta" href="tel:+15036087014" onclick="trackPhoneCall('desktop_header_hillsboro')">Call Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Breadcrumb -->
+    <div class="container">
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <a href="/">Home</a> &rsaquo; Hillsboro Car Towing
+      </nav>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-pattern"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">&#9733;&#9733;&#9733;&#9733;&#9733; 5.0 on Google • 18 Reviews</div>
+          <h1>Hillsboro Car Towing — 24/7 Tow Truck Service on the West Side</h1>
+          <p>
+            Stranded in Hillsboro? Affordable Car Towing LLC delivers fast, reliable flatbed towing and roadside assistance across Hillsboro and the west side of the Portland metro. Whether you need help along Highway 26, Tualatin Valley Highway, or near the Intel campus area, we provide <a href="/emergency-towing/">emergency towing</a>, <a href="/jump-start-service/">jump starts</a>, <a href="/car-lockout-service/">lockouts</a>, <a href="/tire-change-service/">tire changes</a>, and <a href="/fuel-delivery-service/">fuel delivery</a> any time of day or night.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-yellow" href="tel:+15036087014" onclick="trackPhoneCall('hero_hillsboro')">Call Now (503) 608-7014</a>
+            <a class="btn btn-ghost" href="/#areas">View Service Areas</a>
+          </div>
+          <div class="pill-row">
+            <span>Emergency Towing</span>
+            <span>Flatbed Towing</span>
+            <span>Lockouts</span>
+            <span>Jump Starts</span>
+            <span>Tire Change</span>
+            <span>Fuel Delivery</span>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-photo-wrap">
+            <img class="hero-photo" src="/images/tow-truck-hero.jpg" alt="Tow truck providing car towing service in Hillsboro Oregon near Highway 26" width="800" height="600" fetchpriority="high" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tow Truck Near Me -->
+    <section class="section">
+      <div class="container">
+        <h2>Tow Truck Near Me in Hillsboro, Oregon</h2>
+        <p>
+          Looking for a tow truck near you in Hillsboro? Affordable Car Towing LLC provides fast dispatch to all parts of Hillsboro, from the Orenco Station and Tanasbourne shopping areas to the tech campuses along NE Shute Road and NW Century Blvd. Hillsboro is the heart of Oregon's Silicon Forest, and thousands of commuters travel Highway 26 and Tualatin Valley Highway every day. If your vehicle breaks down near the Hillsboro Airport, stalls out on Cornell Road, or you get locked out at a trailhead near Jackson Bottom Wetlands, our team responds quickly. We are a Portland-based towing company that serves the entire west side with 24/7 availability, so you are never left waiting long for professional help.
+        </p>
+      </div>
+    </section>
+
+    <!-- Trust strip -->
+    <section class="trust-strip container">
+      <div class="trust-card">
+        <h3>Fast Dispatch</h3>
+        <p>Quick response to Hillsboro, Highway 26, TV Highway, and the entire west side corridor.</p>
+      </div>
+      <div class="trust-card">
+        <h3>Local Coverage</h3>
+        <p>Serving Hillsboro, Beaverton, Aloha, Cornelius, Forest Grove, and Washington County.</p>
+      </div>
+      <div class="trust-card">
+        <h3>24/7 Availability</h3>
+        <p>Day or night towing and roadside assistance throughout the Hillsboro area.</p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head center">
+          <div class="section-kicker">Roadside Services</div>
+          <h2>Hillsboro towing and roadside assistance</h2>
+          <p>From dead batteries in the Intel parking lot to lockouts near Orenco Station — here is what we handle and when to call.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17h4V5H2v12h3"/><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>
             </div>
-        </header>
-
-        <main>
-            <section class="hero">
-                <div class="container hero-grid">
-                    <div class="hero-copy">
-                        <div class="eyebrow">Hillsboro – Affordable Car Towing LLC</div>
-                        <h1>Hillsboro Car Towing – Fast 24/7 Emergency Roadside Assistance</h1>
-                        <p>Affordable Car Towing LLC provides dependable towing and roadside help throughout Hillsboro and nearby areas. Whether you need a tow, a jump start, lockout help, a tire change, or fuel delivery, we’re here to help get you moving again as quickly as possible.</p>
-                        <div class="hero-actions">
-                            <a href="tel:15036087014" class="btn btn-yellow">Call Now (503) 608-7014</a>
-                            <a href="../#areas" class="btn btn-ghost">View Service Areas</a>
-                        </div>
-                    </div>
-                    <div class="hero-media">
-                        <img class="hero-photo" src="../assets/img/tow-truck-hero.jpg" alt="Hillsboro car towing service" />
-                    </div>
-                </div>
-            </section>
-
-            <section class="services">
-                <div class="container">
-                    <h2>Services Offered in Hillsboro</h2>
-                    <div class="services-grid">
-                        <article class="service-card">
-                            <h3>Emergency Towing</h3>
-                            <p>Fast towing across Hillsboro and surrounding areas for breakdowns, non-starts, accidents, and vehicles that need to be moved safely.</p>
-                        </article>
-                        <article class="service-card">
-                            <h3>Lockout Service</h3>
-                            <p>Locked your keys in the car? We help you get back in quickly without the stress of waiting around forever.</p>
-                        </article>
-                        <article class="service-card">
-                            <h3>Jump Starts</h3>
-                            <p>Dead battery at home, work, or on the roadside? We provide quick jump starts to help get you moving again.</p>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <section class="cta">
-                <div class="container">
-                    <a href="tel:15036087014" class="btn btn-yellow">Call Now (503) 608-7014</a>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <div class="footer-content">
-                <p>&copy; 2026 Affordable Car Towing LLC. All Rights Reserved.</p>
+            <h3><a href="/emergency-towing/">Emergency Towing</a></h3>
+            <p>Fast flatbed towing across Hillsboro for breakdowns, accidents, and non-starts along Highway 26 and Tualatin Valley Highway.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg>
             </div>
-        </footer>
+            <h3><a href="/car-lockout-service/">Lockout Service</a></h3>
+            <p>Locked out of your car in Hillsboro? We get you back in fast whether you are at work, home, or a shopping center.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3><a href="/jump-start-service/">Jump Starts</a></h3>
+            <p>Dead battery at a Hillsboro office park or along TV Highway? We provide quick jump starts to get you moving again.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="22"/><line x1="2" y1="12" x2="8" y2="12"/><line x1="16" y1="12" x2="22" y2="12"/></svg>
+            </div>
+            <h3><a href="/tire-change-service/">Flat Tire Change</a></h3>
+            <p>Got a flat on the Sunset Highway or a Hillsboro side street? We swap in your spare and get you back on the road.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="15" y2="22"/><line x1="4" y1="9" x2="14" y2="9"/><path d="M14 22V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v18"/><path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 2 2a2 2 0 0 0 2-2V9.83a2 2 0 0 0-.59-1.42L18 5"/></svg>
+            </div>
+            <h3><a href="/fuel-delivery-service/">Fuel Delivery</a></h3>
+            <p>Ran out of gas on the west side? We deliver fuel in Hillsboro so you can get back on your way without the hassle.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3><a href="/roadside-assistance/">Roadside Assistance</a></h3>
+            <p>General roadside help for Hillsboro drivers — dependable local assistance when your vehicle leaves you stuck.</p>
+          </article>
+        </div>
 
-        <script src="../assets/js/main.js"></script>
-<script src="../assets/js/dni.js"></script>
-    </body>
-    </html>
-    
+        <div style="text-align:center; margin:40px 0;">
+          <a href="tel:+15036087014" class="btn btn-yellow" onclick="trackPhoneCall('services_cta_hillsboro')">
+            Call Now For Fast Tow Truck In Hillsboro
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section section-soft">
+      <div class="container split-grid">
+        <div class="about-photo-wrap">
+          <img class="about-photo" src="/images/tow-truck-service.jpg" alt="Affordable Car Towing LLC tow truck providing roadside service in Hillsboro Oregon" loading="lazy" width="800" height="600" />
+        </div>
+        <div class="about-copy">
+          <div class="section-kicker">Why Choose Us</div>
+          <h2>Dependable towing service for Hillsboro and the west side</h2>
+          <p>Hillsboro is one of the fastest-growing cities in Oregon, and with heavy commuter traffic on Highway 26 and TV Highway, breakdowns and roadside emergencies are a daily reality. Affordable Car Towing LLC provides fast, no-hassle towing and roadside assistance to Hillsboro residents, workers, and travelers. We answer the phone and dispatch quickly so you are not stuck on the shoulder any longer than necessary.</p>
+          <ul>
+            <li>Fast response to Hillsboro, Orenco, Tanasbourne, and AmberGlen</li>
+            <li>Experienced drivers familiar with Highway 26 and west side roads</li>
+            <li>Affordable, transparent pricing with no hidden fees</li>
+            <li>5.0 stars from 18+ verified Google reviews</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Areas Served -->
+    <section id="areas" class="section">
+      <div class="container">
+        <div class="areas-top">
+          <div>
+            <div class="section-kicker">Areas We Serve</div>
+            <h2>Hillsboro and surrounding towing service areas</h2>
+          </div>
+          <a class="btn btn-yellow" href="tel:+15036087014" onclick="trackPhoneCall('areas_cta_hillsboro')">Need help now? Call (503) 608-7014</a>
+        </div>
+
+        <div class="areas-grid">
+          <a href="/portland-car-towing/">Portland Car Towing</a>
+          <a href="/gresham-car-towing/">Gresham Car Towing</a>
+          <a href="/clackamas-car-towing/">Clackamas Car Towing</a>
+          <a href="/gladstone-car-towing/">Gladstone Car Towing</a>
+          <a href="/oregon-city-car-towing/">Oregon City Car Towing</a>
+          <a href="/damascus-car-towing/">Damascus Car Towing</a>
+          <a href="/boring-car-towing/">Boring Car Towing</a>
+          <a href="/sandy-car-towing/">Sandy Car Towing</a>
+          <a href="/lake-oswego-car-towing/">Lake Oswego Car Towing</a>
+          <a href="/west-linn-car-towing/">West Linn Car Towing</a>
+          <a href="/beaverton-car-towing/">Beaverton Car Towing</a>
+          <a href="/hillsboro-car-towing/">Hillsboro Car Towing</a>
+          <a href="/troutdale-car-towing/">Troutdale Car Towing</a>
+          <a href="/milwaukie-car-towing/">Milwaukie Car Towing</a>
+          <a href="/vancouver-wa-car-towing/">Vancouver Car Towing</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="section section-blue">
+      <div class="container">
+        <div class="section-head center light">
+          <div class="section-kicker gold">&#9733;&#9733;&#9733;&#9733;&#9733; 5.0 on Google • 18 Reviews</div>
+          <h2>What customers are saying</h2>
+        </div>
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>Tow driver was an absolute gentleman, and extremely quick to pick me up and got me where I needed to be with no problems.</p>
+            <strong>Google Review: Dustin</strong>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>My car completely stopped working on the side of the road and I needed to get the car towed. Victor came and picked up the car smoothly and quickly.</p>
+            <strong>Google Review: Laura</strong>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>Viktor helped me when I got into a car accident and needed to be towed. Very friendly and helpful throughout the whole situation.</p>
+            <strong>Google Review: Aleks</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-head center">
+          <div class="section-kicker">FAQ</div>
+          <h2>Frequently asked questions about Hillsboro towing</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Do you offer 24 hour towing in Hillsboro?</h3>
+            <p>Yes. We provide 24/7 towing and roadside assistance throughout Hillsboro, including along Highway 26 and Tualatin Valley Highway.</p>
+          </article>
+          <article class="service-card">
+            <h3>How quickly can you reach me in Hillsboro?</h3>
+            <p>Response times vary based on traffic and your location, but we dispatch quickly to all parts of Hillsboro and the west side. Call <a href="tel:+15036087014" onclick="trackPhoneCall('faq_eta_hillsboro')">(503) 608-7014</a> for a current ETA.</p>
+          </article>
+          <article class="service-card">
+            <h3>Do you tow vehicles near the Intel campus?</h3>
+            <p>Yes. We serve the entire Hillsboro area including the Ronler Acres and Jones Farm Intel campuses, Orenco Station, Tanasbourne, and AmberGlen.</p>
+          </article>
+          <article class="service-card">
+            <h3>What towing services are available in Hillsboro?</h3>
+            <p>We offer <a href="/emergency-towing/">emergency towing</a>, <a href="/flatbed-towing/">flatbed towing</a>, <a href="/jump-start-service/">jump starts</a>, <a href="/car-lockout-service/">lockout service</a>, <a href="/tire-change-service/">tire changes</a>, and <a href="/fuel-delivery-service/">fuel delivery</a> throughout Hillsboro.</p>
+          </article>
+          <article class="service-card">
+            <h3>Do you provide roadside assistance on Highway 26?</h3>
+            <p>Yes, we provide towing and <a href="/roadside-assistance/">roadside assistance</a> along Highway 26 (Sunset Highway) through Hillsboro, Beaverton, and into Portland.</p>
+          </article>
+          <article class="service-card">
+            <h3>What payment methods do you accept?</h3>
+            <p>We accept cash, credit cards, and debit cards.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="contact" class="section">
+      <div class="container cta-shell">
+        <div class="cta-panel">
+          <div>
+            <div class="section-kicker gold">Call Now</div>
+            <h2>Need a tow truck in Hillsboro?</h2>
+            <p>Fast, affordable towing and roadside assistance available now in Hillsboro and across the west side. Whether you broke down on Highway 26, TV Highway, or anywhere in Washington County, call now and we will send a driver your way.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-yellow" href="tel:+15036087014" onclick="trackPhoneCall('final_cta_hillsboro')">Call (503) 608-7014</a>
+            <div class="contact-chip">Portland, OR • 24/7 Service • Hillsboro Area</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with NAP -->
+  <footer class="section section-blue" style="padding-top:40px;padding-bottom:40px;">
+    <div class="container">
+      <div class="section-head center light">
+        <div style="font-size:20px;font-weight:800;margin-bottom:10px;">Affordable Car Towing LLC</div>
+        <p style="margin:6px 0;">Portland, OR &bull; 24/7 Towing &amp; Roadside Assistance</p>
+        <p style="margin:6px 0;">Service area: Portland, Gresham, Clackamas, Beaverton, Hillsboro, Vancouver WA, and surrounding communities.</p>
+        <p style="margin:10px 0;"><a href="tel:+15036087014" onclick="trackPhoneCall('footer_hillsboro')" style="color:#FFD700;font-weight:700;text-decoration:none;">(503) 608-7014</a></p>
+        <p style="margin-top:20px;font-size:13px;opacity:0.75;">&copy; 2026 Affordable Car Towing LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/dni.js"></script>
+</body>
+</html>

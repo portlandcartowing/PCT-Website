@@ -3,178 +3,492 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Roadside Assistance Portland OR | 24/7 Emergency Help</title>
-  <meta name="description" content="Need roadside assistance in Portland OR? Affordable Car Towing LLC provides 24/7 help including jump starts, lockouts, tire changes, fuel delivery, and towing." />
-  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0a2540" />
+
+  <title>Roadside Assistance Portland OR | 24/7 Roadside Help | (503) 608-7014</title>
+  <meta name="description" content="24/7 roadside assistance in Portland, OR. Jump starts, lockouts, tire changes, fuel delivery, and towing. 5.0 stars on Google. Call (503) 608-7014 now." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://portlandcartowing.com/roadside-assistance/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Roadside Assistance Portland OR | 24/7 Roadside Help" />
+  <meta property="og:description" content="24/7 roadside assistance in Portland, OR. Jump starts, lockouts, tire changes, fuel delivery, and towing. 5.0-star rated." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://portlandcartowing.com/roadside-assistance/" />
+  <meta property="og:image" content="https://portlandcartowing.com/images/tow-truck-hero.jpg" />
+  <meta property="og:site_name" content="Affordable Car Towing LLC" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Roadside Assistance Portland OR | 24/7 Roadside Help" />
+  <meta name="twitter:description" content="24/7 roadside assistance in Portland, OR. 5.0-star rated." />
+  <meta name="twitter:image" content="https://portlandcartowing.com/images/tow-truck-hero.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+  <link rel="apple-touch-icon" href="/images/logo.png" />
+
+  <!-- Preconnects -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <!-- Inline overrides: hero sizing + photo framing (same as homepage) -->
+  <style>
+    .hero h1 {
+      font-size: clamp(28px, 3.6vw, 46px);
+      line-height: 1.12;
+      letter-spacing: -0.015em;
+      max-width: 620px;
+    }
+    @media (max-width: 640px) {
+      .hero h1 { font-size: clamp(26px, 7vw, 36px); }
+    }
+    .hero-photo, .hero-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+    .hero-photo-wrap {
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+    }
+    .breadcrumb-nav {
+      padding: 16px 0;
+      font-size: 14px;
+      opacity: 0.75;
+    }
+    .breadcrumb-nav a { color: inherit; text-decoration: none; }
+    .breadcrumb-nav a:hover { text-decoration: underline; }
+  </style>
+
+  <!-- Google Ads / gtag.js -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18077625029"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18077625029');
+
+    function trackPhoneCall(source) {
+      gtag('event', 'phone_call_click', {
+        'event_category': 'engagement',
+        'event_label': source || 'unknown'
+      });
+      return true;
+    }
+  </script>
+
+  <!-- Schema: Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Roadside Assistance",
+    "alternateName": "24/7 Roadside Assistance Portland",
+    "serviceType": "Roadside Assistance",
+    "url": "https://portlandcartowing.com/roadside-assistance/",
+    "description": "24/7 roadside assistance in Portland, Oregon including jump starts, car lockout service, tire changes, fuel delivery, and emergency towing across the Portland metro.",
+    "provider": {
+      "@type": "AutomotiveBusiness",
+      "@id": "https://portlandcartowing.com/#business",
+      "name": "Affordable Car Towing LLC",
+      "telephone": "+15036087014",
+      "url": "https://portlandcartowing.com/",
+      "image": "https://portlandcartowing.com/images/tow-truck-hero.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Portland",
+        "addressRegion": "OR",
+        "postalCode": "97236",
+        "addressCountry": "US"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "18",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Portland" },
+      { "@type": "City", "name": "Gresham" },
+      { "@type": "City", "name": "Clackamas" },
+      { "@type": "City", "name": "Milwaukie" },
+      { "@type": "City", "name": "Beaverton" },
+      { "@type": "City", "name": "Hillsboro" },
+      { "@type": "City", "name": "Troutdale" },
+      { "@type": "City", "name": "Vancouver" }
+    ],
+    "availableChannel": {
+      "@type": "ServiceChannel",
+      "servicePhone": "+15036087014",
+      "availableLanguage": "English"
+    },
+    "hoursAvailable": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  }
+  </script>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://portlandcartowing.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Roadside Assistance", "item": "https://portlandcartowing.com/roadside-assistance/" }
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What roadside assistance services do you offer in Portland?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We provide a full range of 24/7 roadside assistance in Portland including jump starts for dead batteries, car lockout service, flat tire changes, fuel delivery, and emergency flatbed towing." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide 24/7 roadside assistance?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. We provide 24/7 roadside assistance in Portland, Oregon. We respond to calls day or night, every day of the year, for any roadside emergency." }
+      },
+      {
+        "@type": "Question",
+        "name": "How fast can you get to me for roadside help?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Response times vary based on your location and current traffic, but we pride ourselves on fast local dispatch across Portland and surrounding areas. Call (503) 608-7014 for a current ETA." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a membership for roadside assistance?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. We do not require any membership or subscription. Simply call (503) 608-7014 when you need roadside help and we will dispatch to your location with affordable, upfront pricing." }
+      },
+      {
+        "@type": "Question",
+        "name": "What areas do you cover for roadside assistance?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We provide roadside assistance throughout Portland and surrounding areas including Gresham, Clackamas, Milwaukie, Beaverton, Hillsboro, Troutdale, and Vancouver, WA." }
+      },
+      {
+        "@type": "Question",
+        "name": "What payment methods do you accept?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We accept cash, credit cards, and debit cards." }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <div class="brand-wrap">
-      <div class="logo-box">
-        <img src="../assets/img/logo.png" alt="Affordable Car Towing LLC" />
-      </div>
-      <div class="brand-text">
-        <div class="brand-name">Affordable Car Towing LLC</div>
-        <div class="brand-sub">Portland • 24/7 Roadside Assistance</div>
-      </div>
-    </div>
-    <nav class="main-nav">
-      <a href="/">Home</a>
-      <a href="/#services">Services</a>
-      <a href="/#areas">Areas</a>
-      <a href="/#contact">Contact</a>
-      <a href="tel:15036087014" class="header-cta">Call Now</a>
-    </nav>
+  <!-- Sticky mobile call bar -->
+  <div class="mobile-callbar">
+    <a href="tel:+15036087014" onclick="trackPhoneCall('mobile_callbar_roadside')">Call Now (503) 608-7014</a>
   </div>
-</header>
 
-<main>
-
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <div class="eyebrow">Portland Roadside Assistance</div>
-      <h1>Roadside Assistance Portland OR – 24/7 Emergency Help Near You</h1>
-      <p>
-        Affordable Car Towing LLC provides fast roadside assistance in Portland Oregon.
-        If you are stranded with a dead battery, locked out, have a flat tire, or need fuel delivery, call now for quick help.
-      </p>
-
-      <div class="hero-actions">
-        <a href="tel:15036087014" class="btn btn-yellow">Call Now (503) 608-7014</a>
-        <a href="/emergency-towing/" class="btn btn-ghost">Emergency Towing</a>
-      </div>
-    </div>
-
-    <div class="hero-media">
-      <img src="../assets/img/tow-truck-hero.jpg" alt="Roadside assistance Portland OR" />
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-head center">
-      <div class="section-kicker">Local Help</div>
-      <h2>Roadside assistance near you in Portland</h2>
-      <p>
-        We provide roadside assistance across Portland including I-5, I-205, downtown, Southeast Portland,
-        parking lots, residential areas, and surrounding communities.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="services section">
-  <div class="container">
-    <div class="services-grid">
-
-      <article class="service-card">
-        <h3><a href="/jump-start-service/">Jump Start Service</a></h3>
-        <p>Dead battery? We provide fast jump starts to get your vehicle running again.</p>
-      </article>
-
-      <article class="service-card">
-        <h3><a href="/car-lockout-service/">Car Lockout Service</a></h3>
-        <p>Locked your keys in the car? We help you get back in quickly.</p>
-      </article>
-
-      <article class="service-card">
-        <h3><a href="/tire-change-service/">Flat Tire Change</a></h3>
-        <p>Flat tire? We can help replace it with your spare and get you back on the road.</p>
-      </article>
-
-      <article class="service-card">
-        <h3><a href="/fuel-delivery-service/">Fuel Delivery</a></h3>
-        <p>Out of gas? We deliver fuel so you can continue your trip.</p>
-      </article>
-
-      <article class="service-card">
-        <h3><a href="/emergency-towing/">Emergency Towing</a></h3>
-        <p>If your vehicle cannot be fixed roadside, we provide towing across Portland.</p>
-      </article>
-
-    </div>
-
-    <div style="text-align:center; margin:40px 0;">
-      <a href="tel:15036087014" class="btn btn-yellow">
-        Call Now For Roadside Assistance
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-wrap" aria-label="Affordable Car Towing LLC home" style="text-decoration:none;color:inherit;">
+        <div class="logo-box">
+          <img src="/images/logo.png" alt="Affordable Car Towing LLC - Portland tow truck service" width="100" height="100" />
+        </div>
+        <div class="brand-text">
+          <div class="brand-name">Affordable Car Towing LLC</div>
+          <div class="brand-sub">Portland • 24/7 Roadside Assistance</div>
+        </div>
       </a>
+
+      <a href="tel:+15036087014" class="header-cta mobile-header-cta" onclick="trackPhoneCall('mobile_header_roadside')">Call Now</a>
+
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/#services">Services</a>
+        <a href="/#areas">Areas We Serve</a>
+        <a href="/#reviews">Reviews</a>
+        <a href="/#faq">FAQ</a>
+        <a class="header-cta" href="tel:+15036087014" onclick="trackPhoneCall('desktop_header_roadside')">Call Now</a>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
 
-<section class="section section-soft">
-  <div class="container">
-    <h2>Why choose our Portland roadside assistance?</h2>
+  <main>
 
-    <ul>
-      <li>24/7 emergency roadside service</li>
-      <li>Fast response in Portland</li>
-      <li>Local experienced driver</li>
-      <li>Affordable service options</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section section-blue">
-  <div class="container">
-    <div class="section-head center light">
-      <div class="section-kicker gold">FAQ</div>
-      <h2>Roadside assistance questions</h2>
-    </div>
-
-    <div class="services-grid">
-      <article class="service-card">
-        <h3>Do you offer roadside assistance 24/7 in Portland?</h3>
-        <p>Yes. We provide roadside help day and night throughout Portland.</p>
-      </article>
-
-      <article class="service-card">
-        <h3>What services are included?</h3>
-        <p>We provide jump starts, lockouts, tire changes, fuel delivery, and towing.</p>
-      </article>
-
-      <article class="service-card">
-        <h3>What if my vehicle cannot be fixed roadside?</h3>
-        <p>We can help with <a href="/emergency-towing/">emergency towing</a> if needed.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="cta section">
-  <div class="container cta-shell">
-    <div class="cta-panel">
-      <div>
-        <div class="section-kicker gold">Call Now</div>
-        <h2>Need roadside help right now?</h2>
-        <p>Call Affordable Car Towing LLC for fast roadside assistance in Portland.</p>
+    <!-- Visible Breadcrumb -->
+    <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+      <div class="container">
+        <a href="/">Home</a> <span aria-hidden="true">›</span> <span>Roadside Assistance</span>
       </div>
+    </nav>
 
-      <div class="cta-actions">
-        <a href="tel:15036087014" class="btn btn-yellow">
-          Call Now (503) 608-7014
-        </a>
-        <div class="contact-chip">Portland, OR • 24/7 Roadside Help</div>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-pattern"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">★★★★★ 5.0 on Google • 18 Reviews</div>
+          <h1>Roadside Assistance in Portland, OR — 24/7 Help When You Need It</h1>
+          <p>
+            Stranded on the side of the road? Affordable Car Towing LLC provides complete 24/7 roadside assistance throughout Portland and surrounding areas. Dead battery, locked out, flat tire, out of gas, or need a tow — one call handles it all. We dispatch fast so you are never waiting long.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-yellow" href="tel:+15036087014" onclick="trackPhoneCall('hero_roadside')">Call Now (503) 608-7014</a>
+            <a class="btn btn-ghost" href="#service-areas">View Service Areas</a>
+          </div>
+          <div class="pill-row">
+            <span>Jump Starts</span>
+            <span>Lockouts</span>
+            <span>Tire Changes</span>
+            <span>Fuel Delivery</span>
+            <span>Towing</span>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-photo-wrap">
+            <img class="hero-photo" src="/images/tow-truck-hero.jpg" alt="24/7 roadside assistance service in Portland Oregon" width="800" height="600" fetchpriority="high" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Near me -->
+    <section class="section">
+      <div class="container">
+        <h2>Roadside assistance near me in Portland</h2>
+        <p>
+          If you are searching for roadside assistance near you in Portland, Affordable Car Towing LLC provides fast local dispatch across I-5, I-205, Highway 26, downtown Portland, and surrounding neighborhoods. Unlike membership-based programs that route you to a national call center, we are a local Portland company that dispatches directly — which means faster arrival times and personal service.
+        </p>
+        <p>
+          Our roadside assistance covers every common breakdown scenario: dead batteries, keys locked in the car, flat tires, running out of gas, and vehicles that need to be towed. No subscription required — just call when you need help and we will be there.
+        </p>
+      </div>
+    </section>
+
+    <!-- Trust strip -->
+    <section class="trust-strip container">
+      <div class="trust-card">
+        <h3>One Call Does It All</h3>
+        <p>Jump starts, lockouts, tire changes, fuel delivery, and towing — all from one local provider.</p>
+      </div>
+      <div class="trust-card">
+        <h3>No Membership Needed</h3>
+        <p>No annual fee, no subscription. Just call when you need roadside help and pay a fair price.</p>
+      </div>
+      <div class="trust-card">
+        <h3>24/7 Availability</h3>
+        <p>Available day or night, every day of the year, for roadside assistance across Portland.</p>
+      </div>
+    </section>
+
+    <!-- What we handle -->
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-head center">
+          <div class="section-kicker">What We Handle</div>
+          <h2>Roadside situations we respond to</h2>
+          <p>No matter what happened, we have the tools and experience to get you back on the road or safely towed to your destination.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Dead Battery / Jump Start</h3>
+            <p>Battery died at home, work, or on the road? We provide fast <a href="/jump-start-service/">jump start service</a> to get your engine running again in minutes.</p>
+          </article>
+          <article class="service-card">
+            <h3>Car Lockout</h3>
+            <p>Keys locked inside your vehicle? Our <a href="/car-lockout-service/">car lockout service</a> gets you back in quickly without damaging your door, lock, or window.</p>
+          </article>
+          <article class="service-card">
+            <h3>Flat Tire Change</h3>
+            <p>Got a flat? We provide fast <a href="/tire-change-service/">tire change service</a> — we swap your flat for the spare so you can drive to a tire shop safely.</p>
+          </article>
+          <article class="service-card">
+            <h3>Fuel Delivery</h3>
+            <p>Ran out of gas? Our <a href="/fuel-delivery-service/">fuel delivery service</a> brings enough fuel to your location so you can get to the nearest gas station.</p>
+          </article>
+          <article class="service-card">
+            <h3>Emergency Towing</h3>
+            <p>Vehicle cannot be fixed on the spot? We provide <a href="/emergency-towing/">emergency flatbed towing</a> to get your car safely to a repair shop, body shop, or home.</p>
+          </article>
+          <article class="service-card">
+            <h3>After-Hours Help</h3>
+            <p>Breakdowns do not follow business hours. We respond to roadside calls 24 hours a day, 7 days a week, 365 days a year — including holidays and late nights.</p>
+          </article>
+        </div>
+
+        <div style="text-align:center; margin:40px 0;">
+          <a href="tel:+15036087014" class="btn btn-yellow" onclick="trackPhoneCall('services_cta_roadside')">
+            Call Now For Roadside Assistance
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related services -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center">
+          <div class="section-kicker">Related Services</div>
+          <h2>Individual service pages</h2>
+          <p>Need details on a specific service? Visit the dedicated page below.</p>
+        </div>
+
+        <div class="areas-grid">
+          <a href="/emergency-towing/">Emergency Towing</a>
+          <a href="/flatbed-towing/">Flatbed Towing</a>
+          <a href="/jump-start-service/">Jump Start Service</a>
+          <a href="/car-lockout-service/">Car Lockout Service</a>
+          <a href="/tire-change-service/">Tire Change Service</a>
+          <a href="/fuel-delivery-service/">Fuel Delivery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service areas -->
+    <section id="service-areas" class="section">
+      <div class="container">
+        <div class="areas-top">
+          <div>
+            <div class="section-kicker">Service Areas</div>
+            <h2>Roadside assistance across the Portland metro</h2>
+          </div>
+          <a class="btn btn-yellow" href="tel:+15036087014" onclick="trackPhoneCall('areas_cta_roadside')">Need help now? Call (503) 608-7014</a>
+        </div>
+
+        <div class="areas-grid">
+          <a href="/portland-car-towing/">Portland</a>
+          <a href="/gresham-car-towing/">Gresham</a>
+          <a href="/clackamas-car-towing/">Clackamas</a>
+          <a href="/gladstone-car-towing/">Gladstone</a>
+          <a href="/oregon-city-car-towing/">Oregon City</a>
+          <a href="/damascus-car-towing/">Damascus</a>
+          <a href="/boring-car-towing/">Boring</a>
+          <a href="/sandy-car-towing/">Sandy</a>
+          <a href="/lake-oswego-car-towing/">Lake Oswego</a>
+          <a href="/west-linn-car-towing/">West Linn</a>
+          <a href="/beaverton-car-towing/">Beaverton</a>
+          <a href="/hillsboro-car-towing/">Hillsboro</a>
+          <a href="/troutdale-car-towing/">Troutdale</a>
+          <a href="/milwaukie-car-towing/">Milwaukie</a>
+          <a href="/vancouver-wa-car-towing/">Vancouver, WA</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section section-blue">
+      <div class="container">
+        <div class="section-head center light">
+          <div class="section-kicker gold">★★★★★ 5.0 on Google • 18 Reviews</div>
+          <h2>What customers are saying</h2>
+        </div>
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>Tow driver was an absolute gentleman, and extremely quick to pick me up and got me where I needed to be with no problems.</p>
+            <strong>Google Review: Dustin</strong>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>My car completely stopped working on the side of the road and I needed to get the car towed. Victor came and picked up the car smoothly and quickly.</p>
+            <strong>Google Review: Laura</strong>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>Viktor helped me when I got into a car accident and needed to be towed. Very friendly and helpful throughout the whole situation.</p>
+            <strong>Google Review: Aleks</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center">
+          <div class="section-kicker">FAQ</div>
+          <h2>Roadside assistance frequently asked questions</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>What roadside assistance services do you offer in Portland?</h3>
+            <p>We provide a full range of 24/7 roadside assistance in Portland including jump starts for dead batteries, car lockout service, flat tire changes, fuel delivery, and emergency flatbed towing.</p>
+          </article>
+          <article class="service-card">
+            <h3>Do you provide 24/7 roadside assistance?</h3>
+            <p>Yes. We provide 24/7 roadside assistance in Portland, Oregon. We respond to calls day or night, every day of the year, for any roadside emergency.</p>
+          </article>
+          <article class="service-card">
+            <h3>How fast can you get to me for roadside help?</h3>
+            <p>Response times vary based on your location and current traffic, but we pride ourselves on fast local dispatch across Portland and surrounding areas. Call <a href="tel:+15036087014" onclick="trackPhoneCall('faq_eta_roadside')">(503) 608-7014</a> for a current ETA.</p>
+          </article>
+          <article class="service-card">
+            <h3>Do I need a membership for roadside assistance?</h3>
+            <p>No. We do not require any membership or subscription. Simply call (503) 608-7014 when you need roadside help and we will dispatch to your location with affordable, upfront pricing.</p>
+          </article>
+          <article class="service-card">
+            <h3>What areas do you cover for roadside assistance?</h3>
+            <p>We provide roadside assistance throughout Portland and surrounding areas including <a href="/gresham-car-towing/">Gresham</a>, <a href="/clackamas-car-towing/">Clackamas</a>, <a href="/milwaukie-car-towing/">Milwaukie</a>, <a href="/beaverton-car-towing/">Beaverton</a>, <a href="/hillsboro-car-towing/">Hillsboro</a>, <a href="/troutdale-car-towing/">Troutdale</a>, and <a href="/vancouver-wa-car-towing/">Vancouver, WA</a>.</p>
+          </article>
+          <article class="service-card">
+            <h3>What payment methods do you accept?</h3>
+            <p>We accept cash, credit cards, and debit cards.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+      <div class="container cta-shell">
+        <div class="cta-panel">
+          <div>
+            <div class="section-kicker gold">Call Now</div>
+            <h2>Need roadside assistance right now?</h2>
+            <p>Fast, affordable roadside help available 24/7. We service Portland, Vancouver, Gresham, Clackamas, Happy Valley, and surrounding areas with quick response times, professional service, and upfront pricing.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-yellow" href="tel:+15036087014" onclick="trackPhoneCall('final_cta_roadside')">Call (503) 608-7014</a>
+            <div class="contact-chip">Portland, OR • 24/7 Service • Vancouver, WA</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="section section-blue" style="padding-top:40px;padding-bottom:40px;">
+    <div class="container">
+      <div class="section-head center light">
+        <div style="font-size:20px;font-weight:800;margin-bottom:10px;">Affordable Car Towing LLC</div>
+        <p style="margin:6px 0;">Portland, OR • 24/7 Towing &amp; Roadside Assistance</p>
+        <p style="margin:6px 0;">Service area: Portland, Gresham, Clackamas, Beaverton, Hillsboro, Vancouver WA, and surrounding communities.</p>
+        <p style="margin:10px 0;"><a href="tel:+15036087014" onclick="trackPhoneCall('footer_roadside')" style="color:#FFD700;font-weight:700;text-decoration:none;">(503) 608-7014</a></p>
+        <p style="margin-top:20px;font-size:13px;opacity:0.75;">&copy; 2026 Affordable Car Towing LLC. All rights reserved.</p>
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-</main>
-
-<footer>
-  <div class="footer-content">
-    <p>&copy; 2026 Affordable Car Towing LLC</p>
-  </div>
-</footer>
-
-<script src="../assets/js/main.js"></script>
+  <script src="../assets/js/main.js"></script>
 <script src="../assets/js/dni.js"></script>
 </body>
 </html>
