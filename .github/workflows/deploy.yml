@@ -15,8 +15,23 @@ jobs:
       - name: Deploy via lftp
         run: |
           lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" \
-               -e "set ftp:ssl-allow yes; set ssl:verify-certificate no; set ftp:passive-mode yes; \
-                   mirror --reverse --delete --verbose --parallel=5 \
+               -e "
+                 set ftp:ssl-allow yes;
+                 set ssl:verify-certificate no;
+                 set ftp:passive-mode yes;
+                 echo '--- Current directory ---';
+                 pwd;
+                 echo '--- Listing home ---';
+                 ls;
+                 echo '--- Changing to public_html ---';
+                 cd public_html;
+                 pwd;
+                 echo '--- Starting upload ---';
+                 mirror --reverse --verbose --parallel=5 \
                    --exclude .git/ --exclude .github/ \
-                   ./ /public_html/; quit" \
+                   ./;
+                 echo '--- Upload complete ---';
+                 ls;
+                 quit
+               " \
                ${{ secrets.FTP_HOST }}
