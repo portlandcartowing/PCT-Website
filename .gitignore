@@ -1,0 +1,32 @@
+# Bluehost / server files
+cgi-bin/
+error_log
+.htaccess.nfd-backup
+.nfd-migration-tracking
+.well-known/
+.well-known.zip
+
+# Old WordPress files (not used anymore)
+wp-admin/
+wp-content/
+wp-includes/
+wp-*.php
+xmlrpc.php
+license.txt
+readme.html
+README.txt
+index-old.php
+wp-cli.yml
+
+# Config files with credentials
+wp-config.php
+wp-config.broken.php
+wp-config-sample.php
+
+# Backup and zip files
+BackUp Files/
+*.zip
+
+# OS files
+Thumbs.db
+.DS_Store
